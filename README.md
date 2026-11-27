@@ -9,9 +9,9 @@
 
 ## 界面预览
 
-| 首页 | 本地缓存 |
+| 首页 | 推荐流 |
 |---|---|
-| ![首页](docs/screenshots/home.png) | ![本地存储](docs/screenshots/cache.png) |
+| ![首页](docs/screenshots/home.png) | ![推荐流](docs/screenshots/feed.png) |
 
 ## 功能特性
 
