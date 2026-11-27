@@ -1,5 +1,5 @@
 # 黄果短剧 Android
-
+黄果短剧第三方安卓APP，纯净无广告，像刷抖音一样刷黄果，自动同步发布站更新可直连站点。
 > 非官方 Android 客户端 · 原生播放器 + 轻量 WebView 界面
 > 当前版本 **v0.11.3**（versionCode 90）
 
@@ -59,29 +59,6 @@ WebView (HTML/CSS/JS)  ── JS Bridge ──  MainActivity
 - **封面缓存**：`BitmapFactory` 采样 → `createScaledBitmap` → WebP(q82) 落盘；缓存键包含目标宽度，改规格不会读到旧图
 - **容错**：缓存目录被系统清空后自动重建；磁盘写满时释放视频缓存重试，仍失败则安静降级为文字占位
 - **超时体系**：每个 bridge 请求有独立超时（8–60s），页面先渲染再取数，网络异常不会让界面卡在上一页
-
-## 构建
-
-环境要求：
-
-- JDK 17+
-- Android SDK 34（compileSdk 34 / minSdk 24）
-- Gradle 8.x（已附带 wrapper）
-
-```bash
-git clone https://github.com/HFPlayAI/HuangguoAPP.git
-cd HuangguoAPP
-./gradlew :app:assembleDebug
-# 产物：app/build/outputs/apk/debug/app-debug.apk
-```
-
-命令行构建时指定 SDK 路径：
-
-```bash
-export ANDROID_HOME=/path/to/android-sdk
-export JAVA_HOME=/path/to/jdk
-./gradlew :app:assembleDebug
-```
 
 ## 下载
 
